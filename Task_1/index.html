@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdatingForms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+
+
+    .resize{
+        resize: none;
+    }
+.gradient-cd{
+
+     
+background-image: linear-gradient(to right,#870000, #190a05 );
+ 
+}
+
+.gradient-cr{
+     
+background-image: linear-gradient(to right, #870000, #190a05,red);
+ 
+}
+
+.table{
+    display: none;
+    margin-left: 175px;
+}
+
+
+
+</style>
+
+<script src=""></script>
+
+
+</head>
+<body class="gradient-cd" >
+
+
+    <div class="container">
+        
+        
+<div class="card  ">
+    <div class="card-header bg-warning text-center">
+        Updating Forms <span class="badge bg-danger rounded" >Try It !</span>
+    </div>
+    <div class="card-body">
+
+
+    
+    
+    
+        <form action="" id="form_submition">
+
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="mb-3">
+<label for="FirstName"  class="form-label">FirstName</label>
+<input id="FirstName" placeholder="firstname" type="text" class="form-control" >            
+                </div>
+</div>
+
+</div>
+<!-- name end -->
+
+<div class="row ">
+
+<div class="col-md-12">
+    <div class="mb-3">
+        <label for="LastName" class="form-label">LastName</label>
+        <input placeholder="lastname" id="LastName" type="text" class="form-control" >
+    </div>
+</div>
+</div>
+
+    <!-- lastname end -->
+
+
+<div class="row ">
+
+    <div class="col-md-12">
+        <div class="mb-3  ">
+            <label for="Gender" class="form-label">Gender</label>
+           
+            <div class="d-flex">
+           
+            <div class="form-check form-check-inline ">
+            <input id="Male" type="radio" class="form-check-input" name="gender" value="Male"  >
+            <label for="Male" class="form-check-label">Male</label>
+            </div>
+
+           <div class="form-check form-check-inline">
+            <input id="feMale" type="radio" class="form-check-input" name="gender" value="Female"  >
+            <label for="feMale" class="form-check-label">Female</label>
+           </div>
+
+           <div class="form-check form-check-inline">
+            <label for="others" class="form-check-label">Others</label>
+            <input id="others" type="radio" class="form-check-input" name="gender" value="Others"  >
+        </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Gender end -->
+
+<div class="row">
+<div class="col-md-12">
+    <div class="mb-3">
+        <label for="Food" class="form-label">Food choose</label>
+       
+       
+        <select class="form-control" name="food" id="food">
+        
+            <option value="none">-------Select---------</option>
+            <option  name="food" value="NorthindianFood">NorthindianFood</option>
+            <option  name="food" value="AmericanFood">AmericanFood</option>
+          
+        </select>
+    
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+    <!-- foodchoise -->
+
+
+<div class="row">
+    
+    <div class="col-md-12">
+
+        <div class="mb-3">
+
+
+            <label for="Address" class="form-label">Address</label>
+<textarea placeholder="address" class="form-control resize" name="address" id="address" cols="3" rows="3"></textarea>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+<!-- address end -->
+
+
+<div class="row">
+    <div class="col-md-12">
+<div class="mb-3">
+<label class="form-label " for="Pincode">Pincode</label>
+<input placeholder="pincode" type="number" name="pincode" id="pincode" class="form-control" >
+
+
+
+</div>
+
+
+    </div>
+</div>
+
+<!-- pincode ens -->
+
+<div class="row">
+    <div class="col-md-12">
+        
+        <div class="mb-3">
+
+            
+<label for="State" class="form-label">State</label>
+<input id="state" placeholder="state" type="text" class="form-control">
+
+            
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- state end -->
+
+
+<div class="row">
+    <div class="col-md-12">
+        
+        <div class="mb-3">
+
+            
+<label for="Country" class="form-label">Country</label>
+<input id="country" placeholder="country" type="text" class="form-control">
+
+            
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- country end -->
+
+<div class="mb-3">
+    <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">
+        Submit
+    </button>
+</div>
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+<div class="row  " >
+    <div class="col-md-9 ">
+        
+
+        
+
+
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr class="tr-th" >
+            
+            <th scope="col"  >FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Gender</th>
+            <th scope="col">food</th>
+            <th scope="col">Address</Address></th>
+            <th scope="col">Pincode</th>
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            
+            <td class="firstnamedata" ></td>
+            <td class="lastnamedata" ></td>
+            <td class="genderdata"></td>
+            <td class="fooddata" ></td>
+            <td class="addressdata" ></td>
+            <td class="pincodedata"></td>
+            <td class="statedata" ></td>
+            <td class="countrydata" ></td>
+         
+          </tr> -->
+
+        </tbody>
+      </table>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+    </div>
+
+    
+
+
+
+
+
+<script src="./script.js"></script>
+    
+</body>
+</html>
